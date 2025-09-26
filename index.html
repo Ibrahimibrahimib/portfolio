@@ -1,26 +1,67 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Game Portfolio (PyScript)</title>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-  </head>
-  <body>
-    <h1>Game Portfolio (PyScript)</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim Ibrahim — Game Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0c0e17;
+      color: #eee;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: #32b4ff;
+    }
+    p {
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.6;
+    }
+    a.button {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #32b4ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.2s ease;
+    }
+    a.button:hover {
+      background: #1f8bcc;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 Ibrahim Ibrahim — Interactive Portfolio</h1>
+  <p>
+    This project is a Python <strong>Pygame application</strong> that presents my CV as an interactive driving game.
+    Because GitHub Pages only hosts static websites, the game cannot run directly in the browser.
+    Instead, you can download and run the game on your computer:
+  </p>
 
-    <!-- If your game_portfolio.py prints or returns text, this area will show output -->
-    <div id="output">
-      <py-output></py-output>
-    </div>
+  <!-- Replace the href with your actual GitHub Release link -->
+  <p>
+    <a class="button" href="https://github.com/Ibrahimibrahimib/portfolio/releases/latest/download/portfolio_game_windows.zip">
+      ⬇️ Download Game (Windows)
+    </a>
+  </p>
 
-    <!-- Load and run your external Python file -->
-    <py-script src="game_portfolio.py"></py-script>
+  <p>If you're on Linux or macOS, you can clone the repo and run <code>python portfolio_game.py</code>.</p>
 
-    <!-- Or, paste short python inline:
-    <py-script>
-      print("Hello from Python in the browser!")
-    </py-script>
-    -->
-  </body>
+  <footer>
+    © 2025 Ibrahim Ibrahim — Built with Python & Pygame
+  </footer>
+</body>
 </html>
