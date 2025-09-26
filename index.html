@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Game Portfolio (PyScript)</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <h1>Game Portfolio (PyScript)</h1>
+
+    <!-- If your game_portfolio.py prints or returns text, this area will show output -->
+    <div id="output">
+      <py-output></py-output>
+    </div>
+
+    <!-- Load and run your external Python file -->
+    <py-script src="game_portfolio.py"></py-script>
+
+    <!-- Or, paste short python inline:
+    <py-script>
+      print("Hello from Python in the browser!")
+    </py-script>
+    -->
+  </body>
+</html>
